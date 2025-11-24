@@ -171,10 +171,10 @@ int main()
         return 1;
     }
 
-    gen_time = chrono::duration_cast<chrono::milliseconds>(t2 - t1).count();
-    run_time = chrono::duration_cast<chrono::milliseconds>(t3 - t2).count();
-    cout << "Data generation time: " << gen_time << "ms" << endl;
-    cout << "Algorithm run time: " << run_time << "ms" << endl;
+    gen_time = chrono::duration_cast<chrono::microseconds>(t2 - t1).count();
+    run_time = chrono::duration_cast<chrono::microseconds>(t3 - t2).count();
+    cout << "Data generation time: " << gen_time / 1000.0 << "ms" << endl;
+    cout << "Algorithm run time: " << run_time / 1000.0 << "ms" << endl;
 
     return 0;
 }
