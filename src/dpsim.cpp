@@ -246,11 +246,13 @@ void dp_maximal_square(vector<vector<char>>& b)
     cout << "k = " << max_square_size << endl;
 }
 
-void print_error() {
+void print_error()
+{
     cout << "Invalid input." << endl;
 }
 
-string random_str(int size) {
+string random_str(int size)
+{
     string str;
     str.reserve(size);
     for (int i = 0; i < size; i++) {
@@ -259,7 +261,8 @@ string random_str(int size) {
     return str;
 }
 
-vector<vector<char>> random_bool_matrix(int m, int n) {
+vector<vector<char>> random_bool_matrix(int m, int n)
+{
     vector<vector<char>> b(m, vector<char>(n));
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
